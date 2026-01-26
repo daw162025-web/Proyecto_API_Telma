@@ -1,5 +1,7 @@
 {
     "require": {
-        "php-open-source-saver/jwt-auth": "^2.3"
+        "php-open-source-saver/jwt-auth": "^2.3",
+      "ext-http": "*",
+      "ext-cassandra": "*"
     }
 }

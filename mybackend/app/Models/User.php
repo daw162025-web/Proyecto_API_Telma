@@ -55,4 +55,12 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+
+    public function petition()
+    {
+        return $this->hasMany(Petition::class);
+    }
+    public function signedPetition(){
+        return $this->belongsToMany(Petition::class, table: 'petition_user');
+    }
 }
